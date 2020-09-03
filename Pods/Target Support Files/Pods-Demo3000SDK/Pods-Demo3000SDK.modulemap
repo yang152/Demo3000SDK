@@ -1,0 +1,6 @@
+framework module Pods_Demo3000SDK {
+  umbrella header "Pods-Demo3000SDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
