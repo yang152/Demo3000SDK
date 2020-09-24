@@ -133,14 +133,14 @@
  开屏广告关闭回调
  */
 - (void)vl_splashAdDidClose:(VLNSplashAd *)splashAd {
-    [self.navigationController popViewControllerAnimated:NO];
+
 }
 
 /**
   开屏广告将要关闭回调
  */
 - (void)vl_splashAdWillClose:(VLNSplashAd *)splashAd {
-    
+    [self.navigationController popViewControllerAnimated:NO];
 }
 
 @end

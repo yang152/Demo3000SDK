@@ -6,9 +6,11 @@ target 'Demo3000SDK' do
 
   pod 'Vlion3000AdSDK/VLion3000ADSDKBLK'
 
-#  pod 'Vlion3000AdSDK/VLion3000ADSDKBDAdapter'
+  pod 'Vlion3000AdSDK/VLion3000ADSDKBDAdapter'
   pod 'Vlion3000AdSDK/VLion3000ADSDKBUAdapter'
-#  pod 'Vlion3000AdSDK/VLion3000ADSDKIMBAdapter'
+  pod 'Vlion3000AdSDK/VLion3000ADSDKIMBAdapter'
+  
+#  pod 'Vlion3000AdSDK/VLion3000ADSDKMGTAdapter'
 
   pod 'Vlion3000AdSDK/RSGameVlion3000Ad'
   pod 'Vlion3000AdSDK/VLion3000NewsSDK'

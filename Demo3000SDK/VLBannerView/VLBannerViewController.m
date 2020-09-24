@@ -26,14 +26,20 @@
     self.vlBannerView.frame = CGRectMake(0, 200, adSize.width, adSize.height);
     [self.view addSubview:self.vlBannerView];
     
-    [self.vlBannerView loadBannerView];
+    [self.vlBannerView loadAd];
     
 }
 
 - (IBAction)btn_reloadBanner:(id)sender {
-    [self.vlBannerView loadBannerView];
+    [self.vlBannerView loadAd];
 }
 #pragma mark --VLNBannerViewDelegate
+
+- (void)vl_bannerView:(VLNBannerView *)bannerView sizeRate:(CGFloat)sizeRate {
+    CGSize adSize = bannerView.bounds.size;
+    self.vlBannerView.frame = CGRectMake(0, 200, adSize.width, adSize.width/sizeRate);
+}
+
 /**
          Banner广告加载成功.
  */
