@@ -55,7 +55,7 @@
         [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:(NSRunLoopCommonModes)];
     }
     
-    self.splashAd = [[VLNSplashAd alloc] initWithSceneName:@"scene"];
+    self.splashAd = [[VLNSplashAd alloc] initWithTag3000Id:@"60023"];
     self.splashAd.delegate = self;
     [self.splashAd loadAd];
     

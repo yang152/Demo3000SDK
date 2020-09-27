@@ -22,8 +22,17 @@
     [super viewDidLoad];
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [RSGameAutoDefineManager managerWithSceneName:@"scene"
-                                   compeleteBlock:^(NSArray<RSGameListModel *> * _Nonnull gameList, NSError * _Nonnull error) {
+//    [RSGameAutoDefineManager managerWithSceneName:@"scene"
+//                                   compeleteBlock:^(NSArray<RSGameListModel *> * _Nonnull gameList, NSError * _Nonnull error) {
+//        [MBProgressHUD hideHUDForView:self.view animated:YES];
+//        if (!error) {
+//            self.array = gameList;
+//            [self.tableView reloadData];
+//            [RSGameAutoDefineManager statisticGameListPageLoadSuccess];
+//        }
+//    }];
+    
+    [RSGameAutoDefineManager managerWithMediaId:@"45" compeleteBlock:^(NSArray<RSGameListModel *> * _Nonnull gameList, NSError * _Nonnull error) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         if (!error) {
             self.array = gameList;

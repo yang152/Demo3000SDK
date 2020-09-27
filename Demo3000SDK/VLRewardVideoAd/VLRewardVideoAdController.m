@@ -25,9 +25,11 @@
     self.showButton.enabled = NO;
     
     
-    self.rewardVideoAd = [[VLNRewardedVideoAd alloc] initWithSceneName:@"scene"];
-    self.rewardVideoAd.delegate = self;
+//    self.rewardVideoAd = [[VLNRewardedVideoAd alloc] initWithSceneName:@"scene"];
+//    self.rewardVideoAd.delegate = self;
     
+    self.rewardVideoAd = [[VLNRewardedVideoAd alloc] initWithTag3000Id:@"60025"];
+    self.rewardVideoAd.delegate = self;
     
     [self.rewardVideoAd loadAd];
 }

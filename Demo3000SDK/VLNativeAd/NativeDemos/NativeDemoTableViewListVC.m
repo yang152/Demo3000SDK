@@ -33,7 +33,7 @@
 
 - (void)loadAd {
     for (int i = 0; i < 7; i++) {
-        VLNNativeAd *ad = [[VLNNativeAd alloc] initWithSceneName:@"scene"
+        VLNNativeAd *ad = [[VLNNativeAd alloc] initWithTag3000Id:@"60024"
                                                           adSize:CGSizeMake(UIScreen.mainScreen.bounds.size.width, 0)
                                                         delegate:self
                                                   viewController:self];

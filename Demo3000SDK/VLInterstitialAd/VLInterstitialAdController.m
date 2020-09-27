@@ -30,7 +30,11 @@
     
     
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    self.interstitialAd = [[VLNInterstitialAd alloc] initWithSceneName:@"scene"];
+//    self.interstitialAd = [[VLNInterstitialAd alloc] initWithSceneName:@"scene"];
+//    self.interstitialAd.delegate = self;
+//    [self.interstitialAd loadAdData];
+    
+    self.interstitialAd = [[VLNInterstitialAd alloc] initWithTag3000Id:@"60028"];
     self.interstitialAd.delegate = self;
     [self.interstitialAd loadAdData];
 }

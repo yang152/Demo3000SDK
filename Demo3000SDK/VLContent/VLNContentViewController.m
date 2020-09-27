@@ -18,8 +18,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    __weak VLNContentViewController *wSelf = self;
+//    self.vlContent = [[VLNContent alloc] initWithSceneName:@"scene"
+//                                            compeleteBlock:^(UIViewController * _Nonnull viewController, NSError * _Nonnull error) {
+//        if (!error) {
+//            [wSelf addChildViewController:wSelf.vlContent.viewController];
+//            [wSelf.view addSubview:wSelf.vlContent.viewController.view];
+//            wSelf.vlContent.viewController.view.frame = UIScreen.mainScreen.bounds;
+//        }
+//        else {
+//            NSLog(@"加载失败--------%@", error);
+//        }
+//    }];
+    
+    
     __weak VLNContentViewController *wSelf = self;
-    self.vlContent = [[VLNContent alloc] initWithSceneName:@"scene"
+    self.vlContent = [[VLNContent alloc] initWithTag3000Id:@"60082"
                                             compeleteBlock:^(UIViewController * _Nonnull viewController, NSError * _Nonnull error) {
         if (!error) {
             [wSelf addChildViewController:wSelf.vlContent.viewController];
@@ -30,7 +44,6 @@
             NSLog(@"加载失败--------%@", error);
         }
     }];
-    
     
 }
 

@@ -26,8 +26,16 @@
         frame = CGRectMake(0, 64, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height - 64);
         self.navH.constant = 64;
     }
+//    VlionAdPageView *view = [[VlionAdPageView alloc] initWithFrame:frame
+//                                                         sceneName:@"scene" currentVC:self pageHomeLoadStatus:^(BOOL success) {
+//        NSLog(@"--------------新闻加载%@", success ? @"成功" : @"失败");
+//    }];
+    
     VlionAdPageView *view = [[VlionAdPageView alloc] initWithFrame:frame
-                                                         sceneName:@"scene" currentVC:self pageHomeLoadStatus:^(BOOL success) {
+                                                             media:@"730"
+                                                          submedia:@"1009"
+                                                         currentVC:self
+                                                pageHomeLoadStatus:^(BOOL success) {
         NSLog(@"--------------新闻加载%@", success ? @"成功" : @"失败");
     }];
     

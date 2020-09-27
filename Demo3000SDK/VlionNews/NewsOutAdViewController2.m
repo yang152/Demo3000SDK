@@ -32,7 +32,8 @@
     self.pageMs = [NSMutableDictionary dictionary];
     
     VlionAdPageView *view = [[VlionAdPageView alloc] initWithFrame:self.view.bounds
-                                                         sceneName:@"scene"
+                                                             media:@"730"
+                                                          submedia:@"1009"
                                                          currentVC:self];
     view.adSource = self;
     [self.view addSubview:view];

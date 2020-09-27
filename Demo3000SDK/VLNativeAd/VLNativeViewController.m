@@ -24,7 +24,7 @@
     self.nativeRenderView.frame = CGRectMake(50, 100, 300, 200);
     self.nativeRenderView.backgroundColor = [UIColor blueColor];
     
-    self.nativeAd = [[VLNNativeAd alloc] initWithSceneName:@"scene"
+    self.nativeAd = [[VLNNativeAd alloc] initWithTag3000Id:@"60024"
                                                     adSize:self.nativeRenderView.bounds.size
                                                   delegate:self
                                             viewController:self];
