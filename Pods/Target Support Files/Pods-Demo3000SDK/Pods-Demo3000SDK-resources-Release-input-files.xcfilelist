@@ -3,4 +3,5 @@ ${PODS_ROOT}/BaiduMobAd_SDK/SDK/baidumobadsdk.bundle
 ${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle
 ${PODS_ROOT}/SigmobAd-iOS/Sigmob/Sigmob.bundle
 ${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/RSGameVlionAd/RSGameVlionAd.bundle
+${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/VLionADSDKJDAdapter/JADYun.bundle
 ${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/VLionADSDK/VLionAdImg.bundle

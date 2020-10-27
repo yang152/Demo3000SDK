@@ -101,6 +101,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_resource "${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle"
   install_resource "${PODS_ROOT}/SigmobAd-iOS/Sigmob/Sigmob.bundle"
   install_resource "${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/RSGameVlionAd/RSGameVlionAd.bundle"
+  install_resource "${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/VLionADSDKJDAdapter/JADYun.bundle"
   install_resource "${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/VLionADSDK/VLionAdImg.bundle"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -108,6 +109,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_resource "${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle"
   install_resource "${PODS_ROOT}/SigmobAd-iOS/Sigmob/Sigmob.bundle"
   install_resource "${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/RSGameVlionAd/RSGameVlionAd.bundle"
+  install_resource "${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/VLionADSDKJDAdapter/JADYun.bundle"
   install_resource "${PODS_ROOT}/Vlion3000AdSDK/Vlion3000AdSDK/VLionADSDK/VLionAdImg.bundle"
 fi
 

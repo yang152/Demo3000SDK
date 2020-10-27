@@ -58,7 +58,7 @@
             {
 //                RSGameListViewController *vc = [[RSGameListViewController alloc] initWithSceneName:@"scene"];
 //                [self.navigationController pushViewController:vc animated:YES];
-                RSGameListViewController *vc = [[RSGameListViewController alloc] initWithMediaId:@"45"];
+                RSGameListViewController *vc = [[RSGameListViewController alloc] initWithMediaId:@"93"];
                 [self.navigationController pushViewController:vc animated:YES];
             }
             break;

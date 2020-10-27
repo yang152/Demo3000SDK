@@ -12,6 +12,9 @@
 @interface AppDelegate ()<VLNSplashAdDelegate>
 @property (nonatomic, strong) VLNSplashAd *ad;
 
+
+@property (nonatomic, strong) NSDate *rDate;
+
 @end
 
 @implementation AppDelegate
@@ -65,6 +68,22 @@
 
 - (void)vl_splashAdDidClose:(VLNSplashAd *)splashAd {
     NSLog(@"VLNSplashAd splashAdDidClose");
+    
+    [self.ad loadAd];
+}
+
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    self.rDate = [NSDate date];
+}
+
+- (void)applicationDidBecomeActive:(UIApplication *)application {
+    if (self.rDate) {
+        NSTimeInterval timeInterval = [[NSDate date] timeIntervalSinceDate:self.rDate];
+        if (timeInterval > 30) {
+            [self.ad showAdInWindow:self.window];
+        }
+    }
 }
 
 @end

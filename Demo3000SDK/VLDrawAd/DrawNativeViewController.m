@@ -45,6 +45,7 @@
     VLNDrawAd *ad = [[VLNDrawAd alloc] initWithTag3000Id:@"60026"];
     ad.delegate = self;
     [ad loadAdDataWithCount:3];
+    [ad loadAdDataWithCount:3];
     self.ad = ad;
     
     [self.tableView registerClass:[DrawAdCell class] forCellReuseIdentifier:@"DrawAdCell"];
