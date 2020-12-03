@@ -12,7 +12,7 @@
 
 #import <RSGameVlionAd/RSGameVlionAd.h>
 
-@interface VLGameRootViewController ()<UITableViewDelegate, UITableViewDataSource>
+@interface VLGameRootViewController ()<UITableViewDelegate, UITableViewDataSource, RSGameListViewControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray *contentArr;
@@ -56,10 +56,11 @@
     switch (sdkAdType) {
         case RSGameLoadTypeDefault:
             {
-//                RSGameListViewController *vc = [[RSGameListViewController alloc] initWithSceneName:@"scene"];
-//                [self.navigationController pushViewController:vc animated:YES];
-                RSGameListViewController *vc = [[RSGameListViewController alloc] initWithMediaId:@"93"];
+                RSGameListViewController *vc = [[RSGameListViewController alloc] initWithSceneName:@"default"];
+                vc.delegate = self;
                 [self.navigationController pushViewController:vc animated:YES];
+//                RSGameListViewController *vc = [[RSGameListViewController alloc] initWithMediaId:@"93"];
+//                [self.navigationController pushViewController:vc animated:YES];
             }
             break;
             
@@ -75,6 +76,17 @@
     }
 }
 
+- (void)vlionRewardVideoAdLoadFailedWithGameId:(NSString *_Nullable)gameId tagId:(NSString *_Nullable)tagId error:(NSError *_Nullable)error {
+    
+}
+
+- (void)vlionRewardVideoAdPlayFailedWithGameId:(NSString *_Nullable)gameId tagId:(NSString *_Nullable)tagId error:(NSError *_Nullable)error {
+    
+}
+
+- (void)vlionSplashAdDidFailWithGameId:(NSString *_Nullable)gameId tagId:(NSString *_Nullable)tagId error:(NSError *_Nullable)error {
+    
+}
 
 #pragma mark --UITableViewDelegate, UITableViewDataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

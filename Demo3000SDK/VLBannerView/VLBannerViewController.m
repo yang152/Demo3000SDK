@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-//    CGSize adSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.width/3);
+//    CGSize adSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.width/6.4);
 //    self.vlBannerView = [[VLNBannerView alloc] initWithSceneName:@"scene"
 //                                                          adSize:adSize
 //                                                        delegate:self
@@ -29,7 +29,7 @@
 //    [self.vlBannerView loadAd];
     
     
-    CGSize adSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.width/3);
+    CGSize adSize = CGSizeMake(UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.width/6.4);
     self.vlBannerView = [[VLNBannerView alloc] initWithTag3000Id:@"60027"
                                                           adSize:adSize
                                                         delegate:self

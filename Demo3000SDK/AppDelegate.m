@@ -22,26 +22,26 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
-//    [[VLNAdSDKManager defaultManager] registerAppId:@"50017" finishBlock:^(BOOL success, NSError * _Nonnull error) {
-//
-//        if (success) {
-//            VLNSplashAd *ad = [[VLNSplashAd alloc] initWithSceneName:@"scene"];
-//            ad.delegate = self;
-//            self.ad = ad;
-//            [ad loadAdAndShowInWindow:self.window];
-//        }
-//        else {
-//            NSLog(@"sdk初始化失败");
-//        }
-//
-//    }];
+    [[VLNAdSDKManager defaultManager] registerAppId:@"50017" finishBlock:^(BOOL success, NSError * _Nonnull error) {
+
+        if (success) {
+            VLNSplashAd *ad = [[VLNSplashAd alloc] initWithSceneName:@"default"];
+            ad.delegate = self;
+            self.ad = ad;
+            [ad loadAdAndShowInWindow:self.window];
+        }
+        else {
+            NSLog(@"sdk初始化失败");
+        }
+
+    }];
     
-    [[VLNAdSDKManager defaultManager] registerAppId:@"50017"];
-    
-    VLNSplashAd *ad = [[VLNSplashAd alloc] initWithTag3000Id:@"60023"];
-    ad.delegate = self;
-    self.ad = ad;
-    [ad loadAdAndShowInWindow:self.window];
+//    [[VLNAdSDKManager defaultManager] registerAppId:@"50017"];
+//
+//    VLNSplashAd *ad = [[VLNSplashAd alloc] initWithTag3000Id:@"60023"];
+//    ad.delegate = self;
+//    self.ad = ad;
+//    [ad loadAdAndShowInWindow:self.window];
     
     return YES;
 }

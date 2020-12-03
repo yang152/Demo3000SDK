@@ -30,13 +30,11 @@
 /// 直接加载开屏广告
 - (IBAction)btn_loadAndShowSplash:(id)sender {
     self.splashAd = [[VLNSplashAd alloc] initWithTag3000Id:@"60023"];
-    self.splashAd.backgroundImage = [UIImage imageNamed:@"vlSplashBj.jpg"];
     [self.splashAd loadAdAndShowInWindow:self.view.window];
 }
 // 先加载开屏广告，加载回调成功后，然后可以在适当时机去展示
 - (IBAction)btn_loadSplash:(UIButton *)sender {
     self.splashAd = [[VLNSplashAd alloc] initWithTag3000Id:@"60023"];
-    self.splashAd.backgroundImage = [UIImage imageNamed:@"vlSplashBj.jpg"];
     self.splashAd.delegate = self;
     [self.splashAd loadAd];
 }
